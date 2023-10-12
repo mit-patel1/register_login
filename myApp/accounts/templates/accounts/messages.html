@@ -10,9 +10,9 @@
 <div style="position: absolute; left: 50%;">
     {% for message in messages %}
         <div id="appMsg" {% if message.tags %} class="alert {{ message.tags }} alert-dismissible"{% endif %} role="alert" style="position: relative; left: -50%;margin-top: 2px;z-index:9999;">{{ message }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        {% comment %} <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="True">&times;</span>
-        </button>
+        </button> {% endcomment %}
         </div>
     {% endfor %}
 </div>
